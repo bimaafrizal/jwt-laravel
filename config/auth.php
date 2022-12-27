@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        "api" => [
+            'driver' => 'jwt',
+            'provider' => 'users',
+        ]
     ],
 
     /*
@@ -58,10 +62,10 @@ return [
     | Supported: "database", "eloquent"
     |
     */
-    'api' => [
-        "driver" => "jwt",
-        "provider" => "users"
-    ],
+    // 'api' => [
+    //     "driver" => "jwt",
+    //     "provider" => "users"
+    // ],
 
     'providers' => [
         'users' => [
